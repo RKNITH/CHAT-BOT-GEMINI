@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Bot Icon -->
+    <div id="chat-bot-icon" class="bot-icon" onclick="toggleChatWindow()">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561128.png" alt="Chat Bot" />
+    </div>
+
+    <!-- Chat Window -->
+    <div id="chat-window" class="chat-window hidden">
+        <div class="chat-header">
+            <h2>Chat Bot</h2>
+            <button id="close-btn" onclick="toggleChatWindow()">X</button>
+        </div>
+        <div id="chat-body" class="chat-body">
+            <ul id="chat-messages"></ul>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

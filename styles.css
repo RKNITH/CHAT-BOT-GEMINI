@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Chat Bot Icon */
+.bot-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0078D4;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.bot-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Chat Window */
+.chat-window {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 400px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Hidden State */
+.hidden {
+    display: none;
+}
+
+/* Chat Header */
+.chat-header {
+    background: #0078D4;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Chat Body */
+.chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+.chat-body ul {
+    list-style-type: none;
+}
+
+/* Chat Messages */
+.chat {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    max-width: 70%;
+}
+
+.chat.incoming {
+    background: #f1f1f1;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.chat.outgoing {
+    background: #0078D4;
+    color: white;
+    text-align: right;
+    align-self: flex-end;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 10px 15px;
+    border: none;
+    background: #0078D4;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .chat-window {
+        width: 100%;
+        height: 70%;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+
+    .bot-icon {
+        bottom: 15px;
+        right: 15px;
+    }
+}
